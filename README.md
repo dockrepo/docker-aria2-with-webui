@@ -61,4 +61,4 @@ services:
 
 ## Thanks
 
-This docker image is based on [abcminiuser](https://hub.docker.com/r/abcminiuser/docker-aria2-with-webui/) & [xujinkai](https://hub.docker.com/r/xujinkai/aria2-with-webui/)'s docker image.
+This docker image is based on [onisuly](https://hub.docker.com/r/onisuly/aria2-with-webui/)'s docker image.
