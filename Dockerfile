@@ -1,7 +1,5 @@
 FROM alpine AS base
 
-LABEL maintainer "zyao89 <zyao89@gmail.com>"
-
 # For build image faster in China
 # RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 
@@ -32,6 +30,8 @@ RUN apk add --no-cache --virtual .install-deps curl unzip build-base automake au
     && apk del .install-deps
 
 FROM base AS release
+
+LABEL maintainer "zyao89 <zyao89@gmail.com>"
 
 COPY --from=build /usr/bin /usr/bin
 COPY --from=build /bin /bin
